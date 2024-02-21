@@ -1,9 +1,9 @@
 if [ ! -d "./logs" ]; then
-    mkdir ./logs
+    mkdir /content/logs
 fi
 
 if [ ! -d "./logs/Flight" ]; then
-    mkdir ./logs/Flight
+    mkdir /content./logs/Flight
 fi
 
 export CUDA_VISIBLE_DEVICES=2
@@ -14,7 +14,7 @@ model_name=MSGNet
 
 for pred_len in 96 192 336 720
 do
-  python -u run_longExp.py \
+  python -u /content/MSGNet/run_longExp.py \
       --is_training 1 \
       --root_path ./dataset/ \
       --data_path Flight.csv \
