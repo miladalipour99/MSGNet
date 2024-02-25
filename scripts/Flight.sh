@@ -6,7 +6,7 @@ if [ ! -d "./logs/Flight" ]; then
     mkdir /content/logs/Flight
 fi
 
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=1
 
 seq_len=96
 label_len=48
