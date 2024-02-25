@@ -6,7 +6,7 @@ if [ ! -d "./logs/exchange" ]; then
     mkdir ./logs/exchange
 fi
 
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=2
 
 seq_len=96
 label_len=48
