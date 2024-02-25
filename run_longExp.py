@@ -107,7 +107,8 @@ parser.add_argument('--devices', type=str, default='0,1,2,3', help='device ids o
 parser.add_argument('--test_flop', action='store_true', default=False, help='See utils/tools for usage')
 
 args = parser.parse_args()
-args.use_gpu = True if torch.cuda.is_available() and args.use_gpu else False
+#args.use_gpu = True if torch.cuda.is_available() and args.use_gpu else False
+args.use_gpu = True 
 
 if args.use_gpu and args.use_multi_gpu:
     args.dvices = args.devices.replace(' ', '')
